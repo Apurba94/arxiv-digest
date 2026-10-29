@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arxiv-digest"
+version = "0.1.0"
+description = "Query the arXiv API for saved keyword searches and produce a daily Markdown digest of new papers."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+arxiv-digest = "arxiv_digest.cli:main"
+
+[tool.setuptools]
+packages = ["arxiv_digest"]
